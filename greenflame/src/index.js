@@ -10,8 +10,9 @@ import { Provider } from 'react-redux';
 import App from './App';
 
 // style
-import './index.css';
+import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(
   <React.StrictMode>

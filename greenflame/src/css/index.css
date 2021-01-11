@@ -1,2 +1,20 @@
-p {
-  color: red; }
+.ge-na {
+  background: white;
+  width: 100%;
+  border: 2px solid red;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ge-img {
+  width: 160px;
+  margin-top: 17px; }
+
+.ho-ca {
+  border-bottom: 7px solid red;
+  max-height: 400px;
+  overflow: hidden; }
+
+.ho-img {
+  width: 100%; }

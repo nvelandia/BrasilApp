@@ -1,0 +1,23 @@
+Header:    
+Background: #ffffff
+Items: #242f43
+Linea roja: #d4002a
+
+Widget:
+Azul items: #2e3849
+Rojo estado over: #d4002a
+Iconos de inputs: #97a2b2
+
+Body Background: #f1f5f8
+
+Banners:
+Background Rojo: #d4002a
+Badge Azul: #242f43
+Iconos: #6d82a8
+
+Footer:
+Background: #242f43
+Línea: #414f67
+Texto interno campos de suscripción: #a7b4c5
+Icono campos de suscripción: #97a2b2
+Copyright background: #192539

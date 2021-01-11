@@ -11,6 +11,8 @@ function Home (props) {
     return (
       
         <div>
+            <Navbar/>
+            <Carousel/>
             <p>{props.cambio.salud} </p>
             <p>{props.cambio.estado}  </p>
             <p>{props.cambio.funciona}  </p>
@@ -19,8 +21,6 @@ function Home (props) {
 
             <button onClick={() => props.saludar()}>click</button>
 
-            <Carousel/>
-            <Navbar/>
 
         </div>
     )

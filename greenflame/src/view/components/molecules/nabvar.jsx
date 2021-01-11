@@ -18,30 +18,30 @@ function NavBar (props) {
 
     return (
 
-        <div>
+        <div className="ge-na">
 
-        <Navbar color="light" light expand="md">
-        <NavbarBrand href="/"> <img src={'/img/avisbudget_logo.svg'} alt="" className="w-56 mt-6"/></NavbarBrand>
+        <Navbar  light expand="lg">
+        <NavbarBrand href="/"> <img src={'/img/avisbudget_logo.svg'} alt="" className="ge-img"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/">Inicio</NavLink>
+              <NavLink href="/"><b>Inicio</b></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Lojas</NavLink>
+              <NavLink href="/"><b>Lojas</b></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Procurar reserva</NavLink>
+              <NavLink href="/"><b>Procurar reserva</b></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Cadastro</NavLink>
+              <NavLink href="/"><b>Cadastro</b></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Faca login na sua conta</NavLink>
+              <NavLink href="/"><b>Faca login na sua conta</b></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Fale Conosco</NavLink>
+              <NavLink href="/"><b>Fale Conosco</b></NavLink>
             </NavItem>
           </Nav>
         </Collapse>
