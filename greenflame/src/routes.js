@@ -5,10 +5,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // Container
 
-import Home from '../src/view/container/home';
-import Step1 from '../src/view/container/step1';
-import Step2 from '../src/view/container/step2';
-import Step3 from '../src/view/container/step3';
+import Home from './view/container/home';
+import Step1 from './view/container/step1';
+import Step2 from './view/container/step2';
+import Step3 from './view/container/step3';
+import NavBar from './view/components/molecules/navbar'
+
 
 
 
@@ -17,7 +19,7 @@ function Routes() {
   return (
 
     <BrowserRouter>
-        {/* <Route /> */}
+        <Route path='/' render={() => <NavBar/> } /> 
             <Switch>
                 <Route exact path='/' render={ ()=> <Home/> } />
                 <Route exact path='/step1' render={ ()=> <Step1/> } />

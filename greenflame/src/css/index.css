@@ -1,20 +1,84 @@
 .ge-na {
-  background: white;
+  background: #ffffff;
   width: 100%;
-  border: 2px solid red;
   height: 70px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: #242f43; }
 
 .ge-img {
   width: 160px;
   margin-top: 17px; }
 
 .ho-ca {
-  border-bottom: 7px solid red;
+  border-bottom: 7px solid #d4002a;
   max-height: 400px;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .ho-img {
   width: 100%; }
+
+.ho-ba {
+  display: flex;
+  width: 500px;
+  max-height: 200px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: #ffffff; }
+
+.ho-con-img {
+  width: 300px;
+  min-width: 300px;
+  max-height: 180px;
+  overflow: hidden;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ho-ba-img {
+  width: 100%; }
+
+.ho-division {
+  background: #d4002a;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  margin-left: -70px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+
+.ho-con-icon {
+  width: 55px;
+  height: 40px;
+  background: #242f43;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px; }
+
+.ho-ba-ico {
+  width: 22px; }
+
+.ho-text {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ho-banners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 150px;
+  flex-direction: column; }
+
+.ho-promo {
+  display: flex;
+  width: 74%; }

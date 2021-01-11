@@ -1,12 +1,13 @@
 @import '../../utils/mixins';
+@import '../../utils/variables';
 
 .ho-ca {
-    border-bottom: 7px solid red;
+    border-bottom: 7px solid $secondary;
     max-height: 400px;
     overflow: hidden;
+    @include center;
 }
 
 .ho-img {
-    width: 100%;
-   
+    width: 100%; 
 }

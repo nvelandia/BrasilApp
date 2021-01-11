@@ -1,0 +1,72 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+.ho-ba {
+    display: flex;
+    width: 500px;
+    max-height: 200px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: $white;
+
+}
+
+.ho-con-img {
+    width: 300px;
+    min-width: 300px;
+    max-height: 180px;
+    overflow: hidden;
+    border-radius: 7px;
+    @include center;
+    
+}
+
+.ho-ba-img {
+    width: 100%;
+}
+
+.ho-division {
+    background: $secondary;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-left: -70px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.ho-con-icon {
+    width: 55px;
+    height: 40px;
+    background: $primary;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+
+.ho-ba-ico {
+    width: 22px;
+    
+}
+
+.ho-text {
+    @include center;
+
+}
+
+.ho-banners {
+    @include center;
+    padding: 10px 150px;
+    flex-direction: column;
+}
+
+.ho-promo {
+    display: flex;
+    width: 74%;
+}

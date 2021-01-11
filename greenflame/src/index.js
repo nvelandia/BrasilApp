@@ -12,6 +12,7 @@ import App from './App';
 // style
 import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 
 ReactDOM.render(

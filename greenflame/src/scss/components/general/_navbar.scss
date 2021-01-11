@@ -1,15 +1,15 @@
 @import '../../utils/mixins';
+@import '../../utils/variables';
 
 .ge-na {
-    background: white;
+    background: $white;
     width: 100%;
-    @include help;
     height: 70px;
     @include center;
+    color: $primary;
 }
 
 .ge-img {
     width: 160px;
     margin-top: 17px;
-
 }
