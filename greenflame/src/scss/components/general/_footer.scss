@@ -1,2 +1,8 @@
 @import '../../utils/mixins';
 @import '../../utils/variables';
+
+.ge-fo-hr {
+    color: $linea;
+    background-color: $linea;
+    height: 1px;
+}

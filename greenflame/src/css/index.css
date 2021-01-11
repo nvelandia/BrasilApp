@@ -11,6 +11,35 @@
   width: 160px;
   margin-top: 17px; }
 
+.ge-fo-hr {
+  color: #414f67;
+  background-color: #414f67;
+  height: 1px; }
+
+.ge-in-img {
+  width: 40px !important;
+  background-color: #ffffff !important;
+  border-bottom-left-radius: 7px !important;
+  border-top-left-radius: 7px !important;
+  border: none !important; }
+
+.ge-in-ico {
+  width: 18px; }
+
+.ge-in-pla {
+  border-bottom-right-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+  color: #a7b4c5 !important;
+  border: none !important; }
+
+.ge-fo-su {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #242f43;
+  color: #ffffff;
+  padding: 30px 0px; }
+
 .ho-ca {
   border-bottom: 7px solid #d4002a;
   max-height: 400px;

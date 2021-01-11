@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { saludar } from '../../redux/actions/home';
 import Carousel from '../components/molecules/carousel';
 import Banners from '../components/molecules/banners';
+import Footer from '../components/organism/footer';
+
 
 
 
@@ -22,6 +24,10 @@ function Home (props) {
             <button onClick={() => props.saludar()}>click</button>
 
             <Banners/>
+            <Footer/>
+
+          
+            
 
 
         </div>
