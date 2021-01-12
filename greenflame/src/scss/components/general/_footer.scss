@@ -5,4 +5,66 @@
     color: $linea;
     background-color: $linea;
     height: 1px;
+    margin: 27px 0px;
 }
+
+.ge-footer {
+    width: 100%;
+    background-color: $primary;
+    position: absolute;
+    // padding: 20px 15%;
+}
+
+.ge-fo-links {
+    color: $white;
+    padding: 0px 15%;
+    h4 {
+        color: $secondary;
+    }
+    img {
+        width: 22px;
+        margin-right: 15px;
+        margin-top: 10px;
+       
+    }
+
+    li {
+        margin-top: 5px; 
+    }
+    li {
+        margin-top: 5px; 
+        list-style: none;
+      }
+      
+      ul {
+        margin: 0px;
+        padding: 0px;
+      }
+
+}
+
+.ge-fo-co {
+    color: $white;
+    background-color: $footer;
+    padding: 20px 21%;
+
+    img {
+        width: 100px;
+        height: 23px;
+        margin: 0px 25px;
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+}
+
+.ge-fo-pa {
+
+    padding: 20px 21%;
+    margin-top: 17px;
+}
+}
+

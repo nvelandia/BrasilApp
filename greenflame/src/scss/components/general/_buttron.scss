@@ -1,0 +1,14 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+
+.ge-buttron {
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    color: $white;
+    background-color: $secondary;
+    padding: 4px 50px;
+    margin: 0px;
+    width: 100%;
+}

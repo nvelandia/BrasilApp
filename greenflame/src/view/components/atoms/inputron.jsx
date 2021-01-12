@@ -11,7 +11,7 @@ return (
     <div >
         <InputGroup >
             <InputGroupAddon addonType="prepend">
-                <InputGroupText className="ge-in-img"><img src={icon} className="ge-in-ico"/> </InputGroupText>
+                <InputGroupText className="ge-in-img"><img src={icon} alt='' className="ge-in-ico"/> </InputGroupText>
             </InputGroupAddon>
             <Input placeholder={placeholder} className="ge-in-pla" />
         </InputGroup>

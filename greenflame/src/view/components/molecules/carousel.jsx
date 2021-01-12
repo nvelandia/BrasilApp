@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import {
   Carousel,
   CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  CarouselControl
 } from 'reactstrap';
 
 const items = [
@@ -30,10 +28,6 @@ const Example = (props) => {
     setActiveIndex(nextIndex);
   }
 
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
 
   const slides = items.map((item) => {
     return (

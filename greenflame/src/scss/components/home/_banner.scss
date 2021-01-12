@@ -3,7 +3,7 @@
 
 .ho-ba {
     display: flex;
-    width: 500px;
+    width: 368px;
     max-height: 200px;
     margin-left: 5px;
     margin-top: 5px;
@@ -12,9 +12,9 @@
 }
 
 .ho-con-img {
-    width: 300px;
-    min-width: 300px;
-    max-height: 180px;
+    width: 270px;
+    min-width: 270px;
+    max-height: 170px;
     overflow: hidden;
     border-radius: 7px;
     @include center;
@@ -30,7 +30,7 @@
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
     margin-left: -70px;
-    width: 140px;
+    width: 122px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,11 +62,10 @@
 
 .ho-banners {
     @include center;
-    padding: 10px 150px;
     flex-direction: column;
+    padding: 60px 15%;
 }
 
 .ho-promo {
-    display: flex;
-    width: 74%;
+    @include center;
 }
