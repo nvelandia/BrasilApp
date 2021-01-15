@@ -16,7 +16,9 @@ return (
             <hr className='ge-fo-hr' />
             <Links/>
         </div>
-        <Copyright/>
+        <div className="ge-fo-con-copy">
+            <Copyright/>
+        </div>
     </div>
     )
 }

@@ -26,22 +26,22 @@ function NavBar (props) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/"><b>Inicio</b></NavLink>
+              <NavLink href="/">Inicio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/"><b>Lojas</b></NavLink>
+              <NavLink href="/step1">Lojas</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/"><b>Procurar reserva</b></NavLink>
+              <NavLink href="/step2">Procurar reserva</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/"><b>Cadastro</b></NavLink>
+              <NavLink href="/">Cadastro</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/"><b>Faca login na sua conta</b></NavLink>
+              <NavLink href="/">Faca login na sua conta</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/"><b>Fale Conosco</b></NavLink>
+              <NavLink href="/">Fale Conosco</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

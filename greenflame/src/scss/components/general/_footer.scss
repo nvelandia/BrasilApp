@@ -1,18 +1,29 @@
 @import '../../utils/mixins';
 @import '../../utils/variables';
 
+
+.ge-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $primary;
+    position: absolute;
+}
+
+.ge-fo-pa {
+    width: 70%;
+    margin-top: 17px;
+    font-family: 'Roboto';
+    font-weight: 100;  
+    margin-bottom: 30px; 
+}
+
 .ge-fo-hr {
     color: $linea;
     background-color: $linea;
     height: 1px;
     margin: 27px 0px;
-}
-
-.ge-footer {
-    width: 100%;
-    background-color: $primary;
-    position: absolute;
-    // padding: 20px 15%;
 }
 
 .ge-fo-links {
@@ -28,30 +39,33 @@
        
     }
 
-    li {
-        margin-top: 5px; 
+    a {
+        text-decoration: none !important;  
+        color: $white; 
     }
-    li {
-        margin-top: 5px; 
-        list-style: none;
-      }
-      
-      ul {
-        margin: 0px;
-        padding: 0px;
-      }
+    a:hover {
+        text-decoration: none !important;  
+        color: $white; 
+    }
 
 }
 
-.ge-fo-co {
+.ge-fo-con-copy {
+    width: 100%;
+    @include center;
     color: $white;
     background-color: $footer;
-    padding: 20px 21%;
+    height: 62px;
+    font-weight: 100;
+}
+
+.ge-fo-copyright {
+    width: 70%;
 
     img {
         width: 100px;
         height: 23px;
-        margin: 0px 25px;
+        margin-left: 10px;
     }
 
     p {
@@ -60,11 +74,3 @@
     }
 
 }
-
-.ge-fo-pa {
-
-    padding: 20px 21%;
-    margin-top: 17px;
-}
-}
-

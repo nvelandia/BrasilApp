@@ -6,10 +6,18 @@
     width: 100%;
     height: 70px;
     @include center;
-    color: $primary;
+    color: $primary !important;    
 }
 
 .ge-img {
     width: 160px;
     margin-top: 17px;
+}
+
+.nav-link {
+    text-decoration: none !important;   
+    color: $primary !important;   
+    font-size: .8rem!important;
+    font-family: 'Roboto';
+    font-weight: 700;
 }

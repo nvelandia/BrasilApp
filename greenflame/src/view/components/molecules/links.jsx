@@ -21,35 +21,29 @@ return (
                 </div>
                 <div className="col-3 d-flex flex-column justify-content-between d-flex flex-column justify-content-between">
                     <h4>Lorem ipsum</h4>
-                    <div >
-                        <ul>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>                     
-                        </ul>                        
+                    <div>         
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>                                            
                     </div>
                 </div>
                 <div className="col-3 d-flex flex-column justify-content-between">
                     <h4>Lorem ipsum</h4>
                     <div>
-                        <ul>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>                    
-                        </ul>                        
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>                  
                     </div>
                 </div>
                 <div className="col-3 d-flex flex-column justify-content-between">
                     <h4>Lorem ipsum</h4>
                     <div>
-                        <ul>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                        </ul> 
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>
+                        <div><a href="/" >Lorem ipsum dolor sit</a></div>    
                     </div>
                 </div>             
         </div>

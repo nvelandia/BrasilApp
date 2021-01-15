@@ -11,7 +11,6 @@ import Step2 from './view/container/step2';
 import Step3 from './view/container/step3';
 import NavBar from './view/components/molecules/navbar';
 import Footer from './view/components/organism/footer';
-import Copyright from './view/components/molecules/copyright';
 
 
 

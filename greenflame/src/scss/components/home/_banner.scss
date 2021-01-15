@@ -1,6 +1,16 @@
 @import '../../utils/mixins';
 @import '../../utils/variables';
 
+.ho-banners {
+    @include center;
+    width: 100%
+}
+
+.ho-promo {
+    @include center;
+}
+
+
 .ho-ba {
     display: flex;
     width: 368px;
@@ -9,6 +19,12 @@
     margin-top: 5px;
     color: $white;
 
+}
+
+.ho-ba-con {
+    width: 70%;
+    @include center;
+    flex-direction: column;
 }
 
 .ho-con-img {
@@ -60,12 +76,3 @@
 
 }
 
-.ho-banners {
-    @include center;
-    flex-direction: column;
-    padding: 60px 15%;
-}
-
-.ho-promo {
-    @include center;
-}

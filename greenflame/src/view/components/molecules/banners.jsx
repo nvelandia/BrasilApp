@@ -23,11 +23,13 @@ function Banners (){
 
 return (
     <div className='ho-banners'>
-        <h3>O MELHOR PRECO DO MERCADO <span>GARANTIDO!</span></h3>
-        <div className='ho-promo'>
-      { banners.map((x, i) => 
-        <Banner text={x.text} icon={x.icon} img={x.img} key={i} />
-      )}
+        <div className='ho-ba-con'>
+            <h3>O MELHOR PRECO DO MERCADO <span>GARANTIDO!</span></h3>
+            <div className='ho-promo'>
+                { banners.map((x, i) => 
+                    <Banner text={x.text} icon={x.icon} img={x.img} key={i} />
+                )}
+            </div>
         </div>
     </div>
 )

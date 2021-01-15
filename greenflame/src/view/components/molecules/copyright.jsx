@@ -3,7 +3,7 @@ import React from 'react'; // eslint-disable-line
 function Copyright (){
 
 return (
-    <div className='ge-fo-co'>
+    <div className='ge-fo-copyright'>
         <div className="row">
             <div className='col-5'>
                 <p>
@@ -11,13 +11,13 @@ return (
                 </p>
             </div>
             <div className='col-7 d-flex justify-content-end'>
-                <div className='d-flex pl-5 justify-content-center align-items-center'>
-                    <p>Lorem, ipsum.</p>
+                <div className='d-flex justify-content-center align-items-center'>
+                    <p>Powered By</p>
                     <img src="/img/pagarme_logo.svg" alt="" className="mb-1" />
                 </div>
-                <div className='d-flex pl-5 justify-content-center align-items-center'>
-                    <p>Lorem, ipsum.</p>
-                    <img src="/img/greenflame_logo.svg" alt="" />
+                <div className='d-flex ml-5 justify-content-center align-items-center'>
+                    <p>Developed By</p>
+                    <img src="/img/greenflame_logo.svg" alt="greenflame" />
                 </div>
             </div>
         </div>   
