@@ -1,8 +1,15 @@
 
 const spanish = {
   text: 'spanish',
-  deep: {
-      text: 'texto profundo aquí'
+  general : {
+    navbar: {
+      home: 'Inico',
+      offices: 'Oficinas',
+      searchReserve: 'Buscar reserva',
+      signUp: 'Registarse',
+      signIn: 'Iniciar sesión ',
+      contact: 'Contáctenos'
+    }
   }
 }
 

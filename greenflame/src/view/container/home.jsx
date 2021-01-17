@@ -32,7 +32,6 @@ function Home (props) {
 
             <div>
                 <p>{translate.text}</p>
-                <p>{translate.deep.text}</p>
             </div>
 
             <Banners/>

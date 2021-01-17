@@ -1,8 +1,15 @@
 
 const english = {
   text: 'english',
-  deep: {
-      text: 'deep text here'
+  general : {
+    navbar: {
+      home: 'Home',
+      offices: 'Offices',
+      searchReserve: 'Search reservation',
+      signUp: 'Sign up',
+      signIn: 'Sign In',
+      contact: 'Contact Us'
+    }
   }
 }
 
