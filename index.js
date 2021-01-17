@@ -1,20 +1,16 @@
-const express = require('express');
+
+const port = 5000;
+const express = require("express");
+const compression = require("compression");
+const path = require('path');
+
 const app = express();
 
+app.use(compression());
+app.use(express.static("./greenflame/build"));
 
-// serve up production assets
-app.use(express.static('greenflame/build'));
+app.get("/*", (req, res) => res.sendFile(path.resolve(__dirname, 'greenflame', 'build', 'index.html')));
 
-// let the react app to handle any unknown routes 
-// serve up the index.html if express does'nt recognize the route
-
-const path = require('path');
-app.get('*', (req, res) => {
-res.sendFile(path.resolve(__dirname, 'greenflame', 'build', 'index.html'));
+app.listen(port, "0.0.0.0", () => {
+	console.log(`Listening on http://0.0.0.0:${port}`);
 });
-
-
-// if not in production use the port 5000
-const PORT = process.env.PORT || 5000;
-console.log('server started on port:',PORT);
-app.listen(PORT);
