@@ -18,6 +18,9 @@
   font-family: 'Roboto';
   font-weight: 700; }
 
+.navbar {
+  width: 70% !important; }
+
 .ge-footer {
   display: flex;
   flex-direction: column;
@@ -40,8 +43,7 @@
   margin: 27px 0px; }
 
 .ge-fo-links {
-  color: #ffffff;
-  padding: 0px 15%; }
+  color: #ffffff; }
   .ge-fo-links h4 {
     color: #d4002a; }
   .ge-fo-links img {

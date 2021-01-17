@@ -31,32 +31,32 @@ function NavBar (props) {
           <Nav className="d-flex justify-content-around navbar-nav w-100" navbar>
             <NavItem>
               <NavLink>
-                <Link to="/">{translate.general.navbar.home}</Link>
+                <Link to="/" className="nav-link">{translate.general.navbar.home}</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/">{translate.general.navbar.offices}</Link>
+                <Link to="/" className="nav-link">{translate.general.navbar.offices}</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/">{translate.general.navbar.searchReserve}</Link>
+                <Link to="/" className="nav-link" >{translate.general.navbar.searchReserve}</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/">{translate.general.navbar.signUp}</Link>
+                <Link to="/" className="nav-link" >{translate.general.navbar.signUp}</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/">{translate.general.navbar.signIn}</Link>
+                <Link to="/" className="nav-link" >{translate.general.navbar.signIn}</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/">{translate.general.navbar.contact}</Link>
+                <Link to="/" className="nav-link" >{translate.general.navbar.contact}</Link>
               </NavLink>
             </NavItem>
           </Nav>
