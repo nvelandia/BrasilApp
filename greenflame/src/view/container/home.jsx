@@ -5,11 +5,18 @@ import { saludar } from '../../redux/actions/home';
 import Carousel from '../components/molecules/carousel';
 import Banners from '../components/molecules/banners';
 import Footer from '../components/organism/footer';
-
+import { setLanguage } from 'react-redux-multilang';
+import  translate from '../../translates/translations';
 
 
 
 function Home (props) {
+
+    const handleClick = () => {
+        props.saludar();
+        setLanguage('es');
+
+    }
 
     return (
       
@@ -21,7 +28,12 @@ function Home (props) {
 
             <h1>Hello</h1>
 
-            <button onClick={() => props.saludar()}>click</button>
+            <button onClick={handleClick}>click</button>
+
+            <div>
+                <p>{translate.text}</p>
+                <p>{translate.deep.text}</p>
+            </div>
 
             <Banners/>
             <Footer/>
@@ -36,7 +48,8 @@ function Home (props) {
 
 const mapStateToProps = state => {
     return {
-        cambio: state.home
+        cambio: state.home,
+        lang: state.lang
     }
 }
 
