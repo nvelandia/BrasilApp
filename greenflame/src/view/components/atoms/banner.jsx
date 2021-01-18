@@ -8,6 +8,7 @@ return (
     <div className='ho-ba'>
         <div className='ho-con-img'>
             <img src={img} alt="" className='ho-ba-img'/>
+            <div className="rotate"></div>
         </div>
         <div className='ho-division'>
             <div className='ho-con-icon'>

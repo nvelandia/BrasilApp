@@ -24,7 +24,7 @@ function Banners (){
 return (
     <div className='ho-banners'>
         <div className='ho-ba-con'>
-            <h3>O MELHOR PRECO DO MERCADO <span>GARANTIDO!</span></h3>
+            <h6>O MELHOR PRECO DO MERCADO <span>GARANTIDO!</span></h6>
             <div className='ho-promo'>
                 { banners.map((x, i) => 
                     <Banner text={x.text} icon={x.icon} img={x.img} key={i} />

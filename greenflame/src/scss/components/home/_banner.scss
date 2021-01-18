@@ -3,17 +3,32 @@
 
 .ho-banners {
     @include center;
-    width: 100%
+    width: 100%;
+    margin: 50px 0px;
+
+    h6 {
+        font-family: 'Roboto';
+        font-weight: 700;
+        margin-bottom: 25px;
+
+        span {
+            color: $secondary;
+
+        }
+    }
 }
 
 .ho-promo {
-    @include center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 
 .ho-ba {
     display: flex;
-    width: 368px;
+    width: 32%;
     max-height: 200px;
     margin-left: 5px;
     margin-top: 5px;
@@ -28,7 +43,7 @@
 }
 
 .ho-con-img {
-    width: 270px;
+    width: 100%;
     min-width: 270px;
     max-height: 170px;
     overflow: hidden;
@@ -46,12 +61,12 @@
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
     margin-left: -70px;
-    width: 122px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-
+    z-index: 100;
 }
 
 .ho-con-icon {
@@ -72,7 +87,16 @@
 }
 
 .ho-text {
-    @include center;
-
+    margin: 30px 20px 0px 0px;
+    text-align: end;
 }
 
+.rotate {
+    height: 130%;
+    background-color: #d4002a;
+    border: 20px solid #d4002a;
+    transform-origin: 0 -86%;
+    transform: rotate(13deg);
+    content: "";
+    z-index: 90;
+}
