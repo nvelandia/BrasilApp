@@ -35,3 +35,12 @@ export const cancelReserve = (body, language) =>
 
 
 
+
+//prueba
+
+export const autoComplete = (body, language) => 
+axios.post('https://backoffice.autorenta.com/api/locations/find', 
+  {query: body, language});
+
+
+

@@ -180,7 +180,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  z-index: 100; }
+  z-index: 9; }
 
 .ho-con-icon {
   width: 55px;
@@ -262,6 +262,16 @@
   flex-direction: column;
   height: 165px;
   margin-top: 20px; }
+
+.ho-wi-item {
+  width: auto;
+  height: 100px; }
+
+.ho-wi-list {
+  position: absolute;
+  z-index: 10;
+  width: auto;
+  height: 200px; }
 
 @font-face {
   font-family: 'Roboto';

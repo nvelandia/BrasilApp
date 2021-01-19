@@ -1,46 +1,53 @@
 
 import React, { useState, useEffect } from 'react'; // eslint-disable-line
 import { connect } from 'react-redux';
-import { saludar } from '../../redux/actions/home';
-import Footer from '../components/organism/footer';
-
-
-
 
 function Step1 (props) {
 
+  const { place_pickup, place_dropoff, info_user, lang } = props;
+  const language = lang === 'ru' ? 'pt' : lang;
+
+  const body = { 
+      pickup_location: place_pickup.id,
+      pickup_company_id: place_pickup.idCompany,
+      pickup_country_id: place_pickup.idCountry,
+      pickup_date: info_user,
+      pickup_time: info_user,
+      dropoff_location: place_dropoff.id,
+      dropoff_company_id: place_dropoff.idCompany,
+      dropoff_country_id: place_dropoff.idCountry,
+      dropoff_date: info_user,
+      dropoff_time: info_user,
+      language: language,
+      passenger_country_id: info_user,
+      passenger_age: info_user
+  }
+
+  useEffect(() => {
+
+  }, [])
+
+  const [fleet, setFleet] = useState([]);
+
     return (
-      
-        <div>
-           
-            <p>{props.cambio.salud} </p>
-            <p>{props.cambio.estado}  </p>
-            <p>{props.cambio.funciona}  </p>
+    
+    <div>
 
-            <h1>Hello</h1>
-
-            <button onClick={() => props.saludar()}>click</button>
-
-
-            <Footer/>
-
-          
-            
-
-
-        </div>
-    )
+    </div>
+  )
 }
 
 const mapStateToProps = state => {
     return {
-        cambio: state.home
+      lang: state.lang.code,
+      place_pickup: state.home.place_pickup, 
+      place_dropoff: state.home.place_dropoff, 
+      info_user: state.home.info_user
     }
 }
 
 const mapDispatchToProps = dispatch => {
 	return {
-		saludar: () => dispatch(saludar())
 	}
 }
 
