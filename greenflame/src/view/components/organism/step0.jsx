@@ -6,10 +6,10 @@ import Datetime from 'react-datetime';
 import "react-datetime/css/react-datetime.css";
 import moment from "moment";
 import { useHistory } from "react-router-dom";
-import { autoComplete } from '../../../services/api';
+import { autoComplete, findLocation } from '../../../services/api';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem,
     InputGroup, InputGroupAddon, InputGroupText, Input,
-    ListGroup, ListGroupItem  } from 'reactstrap';
+    ListGroup, ListGroupItem, CardSubtitle  } from 'reactstrap';
 import { place_pickup, place_dropoff, info_user, clear_home } from '../../../redux/actions/home'; 
 
 function Step0 (props) {
@@ -34,10 +34,7 @@ function Step0 (props) {
         endDate:'',
         endTime:''
     });
-    const [ age, setAge ] = useState('')
-    const [ pickupPlace, setPickupPlace ] = useState('');
-    const [ dropoffPlace, setDropoffPlace ] = useState('');
-
+    const [ age, setAge ] = useState('');
     const [ startLocation, setStartLocation ] = useState([]);
     const [ endLocation, setEndLocation ] = useState([]);
     const [ startLocationFocus, setStartLocationFocus ] = useState(false);
@@ -48,7 +45,7 @@ function Step0 (props) {
         if(name.includes('Time')){
              m = moment(e._d).format("HH:mm");
         }
-        else{ m = moment(e._d).format("DD/MM/YYYY");
+        else{ m = moment(e._d).format("YYYY-MM-DD");
         }
         setDate(prevState => ({...prevState, [name]: m }))
     }
@@ -56,14 +53,14 @@ function Step0 (props) {
     const handleOnChange = (e, name) => {   
         if(e.target.value.length > 2){
             if(name === 'startLocation'){
-                autoComplete(e.target.value, language)
-                    .then(response =>  response.data.response)
+                findLocation({location: e.target.value})
+                    .then(response =>  response.data)
                     .then(res => setStartLocation(res))
                     .catch(error => console.log( error))
             }
             else {
-                autoComplete(e.target.value, language)
-                    .then(response =>  response.data.response)
+                findLocation({location: e.target.value})
+                    .then(response =>  response.data)
                     .then(res => setEndLocation(res))
                     .catch(error => console.log( error))
             }
@@ -73,7 +70,7 @@ function Step0 (props) {
     const renderList = (name) => {
         if(name === 'startLocation'){
             return (<ListGroup className="ho-wi-list">
-                        { startLocation.map((place, i) => (
+                        { startLocation && startLocation.map((place, i) => (
                             <ListGroupItem  
                                 key={i} 
                                 onMouseDown={() => handleOnSelect(place, name)}>
@@ -83,7 +80,7 @@ function Step0 (props) {
                     </ListGroup>)}
         else {
             return (<ListGroup className="ho-wi-list">
-                        { endLocation.map((place, i) => (
+                        { endLocation && endLocation.map((place, i) => (
                             <ListGroupItem  
                             key={i} 
                             onMouseDown={() => handleOnSelect(place, name)}>
@@ -106,7 +103,7 @@ function Step0 (props) {
             pickup_date: date.startDate,
             pickup_time: date.startTime,
             dropoff_date: date.endDate,
-            dropoff_time: date.endtTime,
+            dropoff_time: date.endTime,
             passenger_country_id: 31,
             passenger_age: age
         }

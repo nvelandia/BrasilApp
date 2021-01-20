@@ -2,17 +2,11 @@
 import React, { useState, useEffect } from 'react'; // eslint-disable-line
 import  translate from '../../translates/translations';
 import { connect } from 'react-redux';
+import { setLanguage } from 'react-redux-multilang';
 
 
 function Step2 (props) {
-
-    const handleClick = () => {
     
-        setLanguage('es');
-    
-    }
-    
-
     return (
 
         <div>
@@ -20,7 +14,7 @@ function Step2 (props) {
 
             <h1>Hello</h1>
 
-            <button onClick={handleClick}>click</button>
+            {/* <button onClick={handleClick}>click</button> */}
 
             <div>
                 <p>{translate.text}</p>

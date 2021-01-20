@@ -1,8 +1,10 @@
 
 import React, { useState, useEffect } from 'react'; // eslint-disable-line
 import { connect } from 'react-redux';
+import Car from '../molecules/car';
+import Rates from '../molecules/rates';
 
-function cardFleet (props) {
+function CardFleet (props) {
 
   const { place_pickup, place_dropoff, info_user, lang } = props;
   const language = lang === 'ru' ? 'pt' : lang;
@@ -13,9 +15,17 @@ function cardFleet (props) {
 
     return (
     
-    <div>
-        <div></div>
-        <div></div>
+    <div className="d-flex w-100 justify-content-center align-items-center">
+      <div className="d-flex w-70">
+        <Car/>
+        <div>
+          <div>
+            <img src="" alt=""/>
+            <button>QUIERO RESERVAR AGORA!</button>
+          </div>
+          <Rates/>
+        </div>
+      </div>
     </div>
   )
 }
@@ -34,4 +44,4 @@ const mapDispatchToProps = dispatch => {
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(cardFleet);
+export default connect(mapStateToProps, mapDispatchToProps)(CardFleet);
