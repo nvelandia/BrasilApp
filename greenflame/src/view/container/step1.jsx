@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { findFleet } from '../../services/api';
 import { res } from './test';
 import CardFleet from '../components/organism/cardFleet';
+import CardLocation from '../components/molecules/cardLocation';
+import FilterFleet from '../components/molecules/filterFleet';
 
 
 function Step1 (props) {
@@ -25,17 +27,18 @@ function Step1 (props) {
       dropoff_time: info_user.dropoff_time,
       passenger_country_id: info_user.passenger_country_id,
       passenger_age: info_user.passenger_age,
+      language
 
   }
 
-  //  useEffect(() => {
-  //   console.log('bodyyyyy', body)
-  //     findFleet(body)
-  //       .then(response =>  response.data)
-  //       .then(res => console.log('respuesta api', res))
-  //       .then(res => setFleet(res))
-  //       .catch(error => console.log( error))
-  // }, [])
+   useEffect(() => {
+    console.log('bodyyyyy', body, language)
+      findFleet(body, language)
+        .then(response =>  response.data)
+        .then(res => console.log('respuesta api', res))
+        .then(res => setFleet(res))
+        .catch(error => console.log( error))
+  }, [])
 
   // const companies = [];
 
@@ -61,10 +64,27 @@ function Step1 (props) {
   //         }
   //     }
   //   }    
+  console.log(`${place_pickup.pickup_date} ${place_pickup.pickup_time} hs.`)
 
     return (
     
     <div>
+      <div className="s1-cards-container">
+        <div className="s1-cards">
+        <CardLocation 
+            text={'RETIRADA'}
+            date={`${info_user.pickup_date} ${info_user.pickup_time} hs.`}
+            place={place_pickup.name}
+        />
+        <div className="line"></div>
+        <CardLocation 
+            text={'DEVOLUCAO'}
+            date={`${info_user.pickup_date} ${info_user.pickup_time} hs.`}
+            place={place_dropoff.name}
+        />
+        </div>
+      </div>
+      <FilterFleet/>
       <CardFleet/>
     </div>
   )

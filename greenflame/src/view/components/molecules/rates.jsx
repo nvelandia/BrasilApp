@@ -20,19 +20,19 @@ function Rates (props) {
         <Table hover>
             <thead>
                 <tr>
-                    <th>TARIFAS DISPONIBLES</th>
+                    <th><span>TARIFAS DISPONIBLES</span></th>
                     <th> </th>
-                    <th>
-                        <img src="" alt=""/>
-                        PRE-PAGO
+                    <th className="d-flex">
+                        <img src={'/img/alert-circle.svg'} alt=""/>
+                        <span>PRE-PAGO</span>
                     </th>
-                    <th>PAGAR NO DESTINO</th>
+                    <th><span>PAGAR NO DESTINO</span></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">Tarifa</th>
-                    <td>Inclusoes</td>
+                    <td><span><span>Inclusoes</span></span></td>
                     <td>
                         <Input type="radio" name="radio1" />
                         <span>USD<h5></h5></span>
@@ -44,7 +44,7 @@ function Rates (props) {
                 </tr>
                 <tr>
                     <th scope="row">Tarifa</th>
-                    <td>Inclusoes</td>
+                    <td><span>Inclusoes</span></td>
                     <td>
                         <Input type="radio" name="radio1" />
                         <span>USD<h5></h5></span>
@@ -56,7 +56,7 @@ function Rates (props) {
                 </tr>
                 <tr>
                     <th scope="row">Tarifa</th>
-                    <td>Inclusoes</td>
+                    <td><span>Inclusoes</span></td>
                     <td>
                         <Input type="radio" name="radio1" />
                         <span>USD<h5></h5></span>
@@ -68,7 +68,7 @@ function Rates (props) {
                 </tr>
                 <tr>
                     <th scope="row">Tarifa</th>
-                    <td>Inclusoes</td>
+                    <td><span>Inclusoes</span></td>
                     <td>
                         <Input type="radio" name="radio1" />
                         <span>USD<h5></h5></span>
@@ -80,7 +80,7 @@ function Rates (props) {
                 </tr>
                 <tr>
                     <th scope="row">Tarifa</th>
-                    <td>Inclusoes</td>
+                    <td><span>Inclusoes</span></td>
                     <td>
                         <Input type="radio" name="radio1" />
                         <span>USD<h5></h5></span>

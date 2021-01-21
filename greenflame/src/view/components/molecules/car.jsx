@@ -11,15 +11,16 @@ function Car (props) {
 
     return (
     
-    <div>
-        <div>
-              <img src="https://www.avis.com/content/dam/cars/m/2019/ford/2019-ford-fiesta-se-5door-2wd-hatchback-grey_featured.png" alt=""/>
+    <div className="s1-con-img">
+        <div className="s1-bg">
+              <img src="https://www.avis.com/content/dam/cars/m/2019/ford/2019-ford-fiesta-se-5door-2wd-hatchback-grey_featured.png" alt=""
+                   className="car-img" />
         </div>
-        <div>
-          <button>Grupo A</button>
+        <div className="s1-description">
+          <button >Grupo A</button>
           <h5>Economico</h5>
           <p>Ford Fiesta ou similar </p>
-          <div>
+          <div className="s1-items">
               <div className="d-flex">
                 <img src={'/img/chevron-right.svg'} alt=""/>
                 <p className="m-0 p-0">5 lugares</p>

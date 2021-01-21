@@ -1,7 +1,10 @@
 
 import axios from 'axios';
 
-const host = "http://192.168.0.40:8000/api/";
+const host = "https://brasil.marketingabg.com/api/";
+const headers = {
+    'Access-Control-Allow-Origin': true,
+}
 
 //Requests
 
@@ -10,7 +13,7 @@ export const findLocation = (body, language) =>
 
 
 export const findFleet = (body) => 
-  axios.post(`${host}find_fleet`, body);
+  axios.post(`${host}find_fleet`, headers, body);
 
 
 export const findCar = (body, language) => 

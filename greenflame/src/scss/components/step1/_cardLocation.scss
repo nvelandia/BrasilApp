@@ -1,0 +1,50 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+.s1-cardLocal {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        @include button;
+        width: 30%;
+        margin-left: 10px;
+    }
+}
+
+.s1-startDate{
+    @include center;
+    margin-bottom: 10px;
+}
+
+.address {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    span {
+        color: $secondary;
+    }
+    img{
+        margin-right: 10px;
+    }
+}
+
+.s1-cards {
+    width: 58%;
+    display: flex;
+    padding: 30px;
+    background: $white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.s1-cards-container {
+    width: 100%;
+    @include center;
+    margin: 30px 0px;
+}
+
+.line {
+    border-left: 3px solid $iconinput;
+    height: 100px;
+}

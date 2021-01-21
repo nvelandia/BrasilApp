@@ -15,11 +15,11 @@ function CardFleet (props) {
 
     return (
     
-    <div className="d-flex w-100 justify-content-center align-items-center">
-      <div className="d-flex w-70">
+    <div className="carFleet">
+      <div className="s1-card">
         <Car/>
-        <div>
-          <div>
+        <div className="s1-con-table">
+          <div >
             <img src="" alt=""/>
             <button>QUIERO RESERVAR AGORA!</button>
           </div>

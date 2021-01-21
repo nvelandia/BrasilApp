@@ -1,0 +1,75 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+.carFleet {
+    width: 100%;
+    @include center;
+    margin-bottom: 50px;
+    
+}
+
+.s1-card {
+    display:  flex;
+    width: 58%;
+}
+
+.s1-con-table {
+    width: 60%;
+    background-color: $white;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 30px;
+
+    button {
+        @include button;
+        padding: 4px 30px;
+    }
+    table thead {
+        background-color: $textinput;
+        font-size: 0.8em;
+        img {
+            width: 20px;
+            margin-right: 5px;
+        }
+    }
+    tbody {
+        span {
+            color: $secondary;
+            font-weight: 700;
+        }
+    }
+
+}
+
+.s1-con-img {
+    width: 40%;
+    margin: 10px 0px 10px 10px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    overflow: hidden;
+    
+    .car-img {
+        width: 85%
+    }
+    background-color: $white;
+}
+
+.s1-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 95px;
+}
+
+.s1-description {
+    padding: 20px;
+    button {
+        @include button;
+    }
+}
+
+.s1-bg {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCu-gz9CiIsl1AgpAbjqSrxLvnr5Ww0ozpmg&usqp=CAU");
+    @include center;
+
+}
