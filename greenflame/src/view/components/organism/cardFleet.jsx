@@ -3,15 +3,22 @@ import React, { useState, useEffect } from 'react'; // eslint-disable-line
 import { connect } from 'react-redux';
 import Car from '../molecules/car';
 import Rates from '../molecules/rates';
+import { useHistory } from "react-router-dom";
 
 function CardFleet (props) {
 
   const { place_pickup, place_dropoff, info_user, lang } = props;
   const language = lang === 'ru' ? 'pt' : lang;
+  let history = useHistory();
 
   useEffect(() => {
 
   }, [])
+
+  const handleClick = () => {
+    history.push('/step2')
+
+  }
 
     return (
     
@@ -21,7 +28,7 @@ function CardFleet (props) {
         <div className="s1-con-table">
           <div >
             <img src="" alt=""/>
-            <button>QUIERO RESERVAR AGORA!</button>
+            <button onClick={() => handleClick()}>QUIERO RESERVAR AGORA!</button>
           </div>
           <Rates/>
         </div>

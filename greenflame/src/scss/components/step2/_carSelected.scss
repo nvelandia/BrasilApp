@@ -1,0 +1,67 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+
+.s2-car-container {
+    background: $white;
+    padding: 30px;
+    width: 711px;
+    border-radius: 7px;
+    margin: 23px 0px;
+}
+
+.title {
+    display: flex;
+    span {
+        color: $secondary;
+    }
+}
+.s2-car-brand {
+    display: flex;
+    img { 
+        width: 200px;
+    }
+    
+}
+.s2-car{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.s2-items {
+    div {
+        display: flex;
+        padding: 6px 0px;
+    }
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.s2-car-alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $iconinput;
+    border-radius: 7px;
+    padding: 15px;
+    p {
+        margin-left: 15px;
+        margin-bottom: 0px;
+    }
+}
+
+.s2-car-img {
+    justify-content: center;
+    display: flex;
+    
+}
+.s2-charac {
+    min-width: 180px;
+}
+
+.s2-car-con {
+    width: 100%;
+}

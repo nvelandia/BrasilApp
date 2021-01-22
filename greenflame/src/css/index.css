@@ -414,6 +414,199 @@
   align-items: center;
   flex-direction: column; }
 
+.s2-car-container {
+  background: #ffffff;
+  padding: 30px;
+  width: 711px;
+  border-radius: 7px;
+  margin: 23px 0px; }
+
+.title {
+  display: flex; }
+  .title span {
+    color: #d4002a; }
+
+.s2-car-brand {
+  display: flex; }
+  .s2-car-brand img {
+    width: 200px; }
+
+.s2-car {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.s2-items div {
+  display: flex;
+  padding: 6px 0px; }
+
+.s2-items p {
+  margin: 0px;
+  padding: 0px; }
+
+.s2-car-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #97a2b2;
+  border-radius: 7px;
+  padding: 15px; }
+  .s2-car-alert p {
+    margin-left: 15px;
+    margin-bottom: 0px; }
+
+.s2-car-img {
+  justify-content: center;
+  display: flex; }
+
+.s2-charac {
+  min-width: 180px; }
+
+.s2-car-con {
+  width: 100%; }
+
+.s2 {
+  display: flex;
+  justify-content: center; }
+
+.s2-prices {
+  background-color: #ffffff;
+  width: 400px;
+  margin: 23px 0px 23px 23px;
+  border-radius: 7px; }
+
+.s2-confirm {
+  font-size: .9em;
+  padding: 30px; }
+  .s2-confirm button {
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    color: #ffffff;
+    background-color: #d4002a;
+    padding: 4px auto;
+    margin: 0px;
+    width: 100%; }
+  .s2-confirm .s2-confirm-checkbox {
+    display: flex; }
+    .s2-confirm .s2-confirm-checkbox input {
+      margin-right: 10px; }
+
+.s2-total {
+  background-color: #f1f5f8;
+  padding: 20px 30px 10px 30px; }
+  .s2-total div {
+    display: flex;
+    justify-content: space-between; }
+    .s2-total div span {
+      color: #d4002a;
+      font-weight: 700;
+      padding-left: 10px; }
+    .s2-total div h6 {
+      font-weight: 700; }
+
+.s2-name-price {
+  display: flex;
+  justify-content: space-between; }
+  .s2-name-price span {
+    color: #d4002a;
+    font-weight: 700;
+    padding-left: 10px; }
+  .s2-name-price h6 {
+    font-weight: 700; }
+
+.s2-equipment {
+  padding: 30px 30px 15px 30px; }
+  .s2-equipment .s2-equipment-total {
+    margin-top: 30px; }
+    .s2-equipment .s2-equipment-total div {
+      display: flex;
+      justify-content: space-between; }
+      .s2-equipment .s2-equipment-total div span {
+        color: #d4002a;
+        font-weight: 700;
+        padding-left: 10px; }
+      .s2-equipment .s2-equipment-total div h6 {
+        font-weight: 700; }
+
+.s2-equipment-title {
+  background-color: #f1f5f8;
+  padding: 20px 30px 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .s2-equipment-title h6 {
+    margin: 0;
+    font-weight: 700; }
+
+.s2-taxes-title {
+  background-color: #f1f5f8;
+  padding: 20px 30px 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .s2-taxes-title h6 {
+    margin: 0;
+    font-weight: 700; }
+
+.s2-taxes {
+  padding: 30px 30px 15px 30px; }
+
+.s2-summary {
+  padding: 30px; }
+  .s2-summary .s2-summary-icon {
+    display: flex;
+    align-items: flex-end; }
+    .s2-summary .s2-summary-icon p {
+      margin: 0px;
+      font-weight: 700; }
+    .s2-summary .s2-summary-icon img {
+      margin-right: 20px; }
+  .s2-summary .s2-summary-charac {
+    margin-top: 20px; }
+    .s2-summary .s2-summary-charac div {
+      display: flex; }
+      .s2-summary .s2-summary-charac div p {
+        margin: 0px 0px 0px 20px; }
+  .s2-summary .s2-summary-price {
+    margin-top: 30px; }
+    .s2-summary .s2-summary-price p {
+      margin: 0px !important; }
+
+.s2-card-maps {
+  display: flex; }
+
+.s2-card-map {
+  margin-left: 23px; }
+
+.s2-cardMaps-container {
+  border-radius: 7px;
+  background-color: #ffffff;
+  padding: 23px;
+  width: 344px; }
+  .s2-cardMaps-container button {
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    color: #ffffff;
+    background-color: #d4002a;
+    padding: 4px auto;
+    margin: 0px;
+    margin-top: 23px;
+    width: 100%; }
+  .s2-cardMaps-container h6 {
+    font-weight: 700; }
+  .s2-cardMaps-container .s2-cardMaps-icon {
+    display: flex;
+    margin-bottom: 23px;
+    align-items: flex-end; }
+    .s2-cardMaps-container .s2-cardMaps-icon p {
+      margin: 0px 0px 0px 10px; }
+  .s2-cardMaps-container .s2-cardMaps-address {
+    font-weight: 500; }
+
 @font-face {
   font-family: 'Roboto';
   font-weight: 100;

@@ -1,0 +1,138 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+
+.s2 {
+        display: flex;
+        justify-content: center;
+
+}
+.s2-prices {
+    background-color: $white;
+    width: 400px;
+    margin: 23px 0px 23px 23px;
+    border-radius: 7px;   
+}
+
+.s2-confirm {
+    font-size: .9em;
+    padding: 30px;
+    button {
+        font-weight: 700;
+        @include button;
+        width: 100%;
+    }
+    .s2-confirm-checkbox {
+        display: flex;
+        input {
+            margin-right: 10px;
+        }
+    }
+}
+
+.s2-total {
+    background-color: $body;
+    padding: 20px 30px 10px 30px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        span {
+            color: $secondary;
+            font-weight: 700;
+            padding-left: 10px;
+        }
+        h6 {
+            font-weight: 700;
+        }
+    }
+}
+
+.s2-name-price {
+    display: flex;
+        justify-content: space-between;
+        span {
+            color: $secondary;
+            font-weight: 700;
+            padding-left: 10px;
+        }
+        h6 {
+            font-weight: 700;
+        }
+}
+
+.s2-equipment {
+    padding: 30px 30px 15px 30px;
+    .s2-equipment-total {
+        margin-top: 30px;
+        div {
+            display: flex;
+            justify-content: space-between;
+            span {
+                color: $secondary;
+                font-weight: 700;
+                padding-left: 10px;
+            }
+            h6 {
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
+.s2-equipment-title {
+    background-color: $body;
+    padding: 20px 30px 20px 30px;
+    @include center;
+    h6 {
+        margin: 0;
+        font-weight: 700;
+    }
+
+}
+
+.s2-taxes-title {
+    background-color: $body;
+    padding: 20px 30px 20px 30px;
+    @include center;
+    h6 {
+        margin: 0;
+        font-weight: 700;
+    }
+
+}
+
+.s2-taxes {
+    padding: 30px 30px 15px 30px;
+}
+
+.s2-summary {
+    padding: 30px;
+    .s2-summary-icon {
+        display: flex;
+        align-items: flex-end;
+        p {
+            margin: 0px;
+            font-weight: 700;
+        }
+        img {
+            margin-right: 20px;
+        }
+    }
+    .s2-summary-charac {
+        margin-top: 20px;
+        div {
+            display: flex;
+            p {
+                margin: 0px 0px 0px 20px;
+            }
+        }
+    }
+    .s2-summary-price {
+        margin-top: 30px;
+        p {
+            margin: 0px !important;
+        }
+    }
+}

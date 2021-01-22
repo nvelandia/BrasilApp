@@ -1,0 +1,37 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+.s2-card-maps {
+    display: flex;
+}
+
+.s2-card-map {
+    margin-left: 23px;
+}
+
+.s2-cardMaps-container {
+    border-radius: 7px;;
+    background-color: $white;
+    padding: 23px;
+    width: 344px;
+    button {
+        @include button;
+        margin-top: 23px;
+        width: 100%;
+    }
+    h6 {
+        font-weight: 700;
+    }
+    .s2-cardMaps-icon {
+        display: flex;
+        margin-bottom: 23px;
+        align-items: flex-end;
+        p {
+            margin: 0px 0px 0px 10px; 
+
+        }
+    }
+    .s2-cardMaps-address {
+        font-weight: 500;
+    }
+}
