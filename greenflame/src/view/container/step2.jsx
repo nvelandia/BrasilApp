@@ -6,6 +6,7 @@ import { setLanguage } from 'react-redux-multilang';
 import CarSelected from '../components/atoms/carSelected';
 import Price from '../components/organism/price';
 import CardMap from '../components/molecules/cardMap';
+import EquiOptional from '../components/molecules/equiOptional';
 
 
 function Step2 (props) {
@@ -51,6 +52,7 @@ function Step2 (props) {
                         address={'Miami Intl Airport (MIA)'}/>
                     </div>
                 </div>
+                <EquiOptional/>
             </div>
             <div>
                 <Price/>

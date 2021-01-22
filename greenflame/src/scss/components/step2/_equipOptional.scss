@@ -1,0 +1,23 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+.s2-equipOptional {
+    margin: 23px 0px;
+    background-color: $white;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.s2-equipOptional-select {
+
+        display: flex;
+        
+
+}
+
+.form-check-input {
+    position: relative !important;
+    margin-top: 4px !important;
+    margin-left: 0px !important;
+    width: 80px;
+}
