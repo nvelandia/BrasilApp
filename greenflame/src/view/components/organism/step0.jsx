@@ -121,7 +121,7 @@ function Step0 (props) {
     return (
 
         <div className="ho-wi-step0">
-            <div className="d-flex align-items-center justify-content-around mb-10">
+            <div className="d-flex flex-column flex-sm-row align-items-center justify-content-around mb-2">
                 <div>
                 <InputGroup >
                     <InputGroupAddon addonType="prepend">
@@ -154,7 +154,7 @@ function Step0 (props) {
                     timeConstraints={{ minutes: { step: 30 } }}
                 />
             </div>
-            <div className="d-flex align-items-center justify-content-around mb-10">
+            <div className="d-flex flex-column flex-sm-row align-items-center justify-content-around mb-2">
                <div>
                 <InputGroup >
                     <InputGroupAddon addonType="prepend">
@@ -186,7 +186,7 @@ function Step0 (props) {
                 />
             </div>
 
-            <div className="d-flex align-items-center justify-content-around">
+            <div className="d-flex flex-column flex-sm-row align-items-center justify-content-around">
                 <Dropdown direction="down" isOpen={dropdownOpen} toggle={toggle}>
                     <DropdownToggle caret>
                         {age ? age : 'Idade'}

@@ -24,4 +24,7 @@
 
 .navbar {
     width: 70% !important;
+    @media screen and (max-width: $medium) {
+        width: 84% !important;
+    }
 }
