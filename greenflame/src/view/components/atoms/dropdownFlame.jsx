@@ -16,10 +16,10 @@ function DropdownFlame (props) {
 
     return (
     
-    <div className="s1-filter-container ">
+    <div className="s1-filter-drown ">
         <Dropdown direction="down" isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle caret>
-                
+                Filtrar por grupo de veiculo
             </DropdownToggle>
             <DropdownMenu>
                 <DropdownItem value={'+25'}>+25</DropdownItem>

@@ -67,7 +67,8 @@
 
 .s2-name-price {
     display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
+    width: 85%;
         span {
             color: $secondary;
             font-weight: 700;

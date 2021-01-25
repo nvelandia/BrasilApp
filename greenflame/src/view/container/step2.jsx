@@ -45,12 +45,12 @@ function Step2 (props) {
                             title={'Voce retira o veiculo:'} 
                             date={'20 de setembro de 2020, 20:00hs.'} 
                             address={'Miami Intl Airport (MIA)'}/>
-                        <div className="s2-card-map">
+            
                             <CardMap 
                             title={'Voce devolve o veiculo:'} 
                             date={'30 de setembro de 2020, 20:00hs.'} 
                             address={'Miami Intl Airport (MIA)'}/>
-                        </div>
+                    
                     </div>
                     <EquiOptional/>
                 </div>

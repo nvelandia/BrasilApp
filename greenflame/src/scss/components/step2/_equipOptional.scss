@@ -9,11 +9,23 @@
 }
 
 .s2-equipOptional-select {
-
         display: flex;
-        
-        
+        width: 60%;
+        margin-bottom: 10px;
+        min-width: 344px;
 
+        img {
+            margin: 0px 15px 15px 0px;
+        }
+}
+.s2-equipOptional-three {
+        display: flex;
+        width: 56.5%;
+        margin-bottom: 10px;
+        min-width: 316px;
+        img {
+            margin: 0px 15px 20px 0px;
+        }
 }
 
 .form-check-input {
@@ -21,4 +33,13 @@
     margin-top: 4px !important;
     margin-left: 0px !important;
     width: 30px !important;
+}
+
+.Quantidade {
+    margin-left: 24px;
+    color: green
+}
+
+.con-phrase {
+    margin: 25px 0px;
 }

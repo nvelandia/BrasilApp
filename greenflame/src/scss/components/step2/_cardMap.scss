@@ -3,17 +3,16 @@
 
 .s2-card-maps {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.s2-card-map {
-    margin-left: 23px;
-}
 
 .s2-cardMaps-container {
     border-radius: 7px;;
     background-color: $white;
     padding: 23px;
-    width: 344px;
+    width: 48.5%;
     button {
         @include button;
         margin-top: 23px;

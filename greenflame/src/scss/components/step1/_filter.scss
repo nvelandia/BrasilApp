@@ -21,6 +21,10 @@
     justify-content: center;
     flex-direction: column;
 
+    input {
+        margin-right: 15px;
+    }
+
     div {
         display: flex;
         align-items: baseline;
@@ -32,5 +36,10 @@
 }
 
 .s1-filter-hr {
-    height: 50%;
+    border: 1px solid gray;
+    height: inherit;
+}
+
+.s1-filter-drown {
+    margin-bottom: 10px;
 }

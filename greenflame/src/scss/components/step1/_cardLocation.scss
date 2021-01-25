@@ -4,10 +4,12 @@
 .s1-cardLocal {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0px 30px;
 
     button {
         @include button;
-        width: 30%;
+        width: 40%;
         margin-left: 10px;
     }
 }
@@ -23,6 +25,7 @@
     flex-wrap: wrap;
     span {
         color: $secondary;
+        font-weight: 700;
     }
     img{
         margin-right: 10px;
@@ -32,7 +35,7 @@
 .s1-cards {
     width: 58%;
     display: flex;
-    padding: 30px;
+    padding: 30px 0px;
     background: $white;
     justify-content: space-around;
     align-items: center;

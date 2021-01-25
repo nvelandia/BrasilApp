@@ -16,24 +16,24 @@ function FilterFleet (props) {
     <div className="s1-filter-container ">
         <div className="s1-filter">
                 <div className="s1-filter-divide">
-                    <h4>FILTRAR RESULTADOS POR</h4>
+                    <h6>FILTRAR RESULTADOS POR</h6>
                 </div>
                 <div className="s1-filter-hr"></div>
                 <div className="s1-filter-checkbox">
                     <div>
                         <input type="checkbox"/>
-                        <h5>Avis</h5>
+                        <h6>Avis</h6>
                     </div>
                     <div>
                         <input type="checkbox"/>
-                        <h5>Budget</h5>
+                        <h6>Budget</h6>
                     </div>
                 </div>
-                <div className="s1-filter-divide">
+                <div className="s1-filter-drown-con">
                   <DropdownFlame/>
                   <DropdownFlame/>
                 </div>
-                <div className="s1-filter-divide">
+                <div className="s1-filter-drown-con">
                   <DropdownFlame/>
                   <DropdownFlame/>
                 </div>
