@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 function Car (props) {
 
-  const { place_pickup, place_dropoff, info_user, lang } = props;
+  const { car, lang } = props;
   const language = lang === 'ru' ? 'pt' : lang;
 
 
@@ -17,33 +17,33 @@ function Car (props) {
                    className="car-img" />
         </div>
         <div className="s1-description">
-          <button >Grupo A</button>
-          <h5>Economico</h5>
-          <p>Ford Fiesta ou similar </p>
+          <button >Grupo {car.VehGroup} ({car.Code})</button>
+          <h5>{car.Features2.category}</h5>
+          <p>{car.Name}</p>
           <div className="s1-items">
               <div className="d-flex">
                 <img src={'/img/chevron-right.svg'} alt=""/>
-                <p className="m-0 p-0">5 lugares</p>
+                <p className="m-0 p-0">{car.Features2.seats} lugares</p>
               </div>
               <div className="d-flex">
                 <img src={'/img/chevron-right.svg'} alt=""/>
-                <p className="m-0 p-0">1 mala grande</p>
+                <p className="m-0 p-0">{car.Features2.seats} mala grande</p>
               </div>
               <div className="d-flex">
                 <img src={'/img/chevron-right.svg'} alt=""/>
-                <p className="m-0 p-0">1 mala pequeña</p>
+                <p className="m-0 p-0">{car.Features2.seats} mala pequeña</p>
               </div>
               <div className="d-flex">
                 <img src={'/img/chevron-right.svg'} alt=""/>
-                <p className="m-0 p-0">4 puertas</p>
+                <p className="m-0 p-0">{car.Features2.seats} puertas</p>
               </div>
               <div className="d-flex">
                 <img src={'/img/chevron-right.svg'} alt=""/>
-                <p className="m-0 p-0">Transmicion automatica</p>
+                <p className="m-0 p-0">{car.TransmissionType}</p>
               </div>
               <div className="d-flex">
                 <img src={'/img/chevron-right.svg'} alt=""/>
-                <p className="m-0 p-0">Aire acondicionado</p>
+                <p className="m-0 p-0">{car.Features2.air}</p>
               </div>
           </div>
 

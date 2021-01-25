@@ -29,36 +29,35 @@ function Step2 (props) {
     return (
 
         <div className="s2">
+            <div className="s2-container">
 
+                {/* <h1>Hello</h1>
 
-            {/* <h1>Hello</h1>
+                <button onClick={() => setLanguage('es')}>click</button>
 
-            <button onClick={() => setLanguage('es')}>click</button>
-
-            <div>
-                <p>{translate.text}</p>
-            </div> */}
-            <div>
-                <CarSelected car={car} />
-                <div className="s2-card-maps">
-                    <CardMap 
-                        title={'Voce retira o veiculo:'} 
-                        date={'20 de setembro de 2020, 20:00hs.'} 
-                        address={'Miami Intl Airport (MIA)'}/>
-                    <div className="s2-card-map">
+                <div>
+                    <p>{translate.text}</p>
+                </div> */}
+                <div className="s2-con-left">
+                    <CarSelected car={car} />
+                    <div className="s2-card-maps">
                         <CardMap 
-                        title={'Voce devolve o veiculo:'} 
-                        date={'30 de setembro de 2020, 20:00hs.'} 
-                        address={'Miami Intl Airport (MIA)'}/>
+                            title={'Voce retira o veiculo:'} 
+                            date={'20 de setembro de 2020, 20:00hs.'} 
+                            address={'Miami Intl Airport (MIA)'}/>
+                        <div className="s2-card-map">
+                            <CardMap 
+                            title={'Voce devolve o veiculo:'} 
+                            date={'30 de setembro de 2020, 20:00hs.'} 
+                            address={'Miami Intl Airport (MIA)'}/>
+                        </div>
                     </div>
+                    <EquiOptional/>
                 </div>
-                <EquiOptional/>
+                <div className="s2-con-right">
+                    <Price/>
+                </div>
             </div>
-            <div>
-                <Price/>
-            </div>
-
-
         </div>
     )
 }

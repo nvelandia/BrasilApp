@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 
 function CardFleet (props) {
 
-  const { place_pickup, place_dropoff, info_user, lang } = props;
+  const { rates, car, lang } = props;
   const language = lang === 'ru' ? 'pt' : lang;
   let history = useHistory();
 
@@ -22,18 +22,19 @@ function CardFleet (props) {
 
     return (
     
-    <div className="carFleet">
-      <div className="s1-card">
-        <Car/>
-        <div className="s1-con-table">
-          <div >
-            <img src="" alt=""/>
-            <button onClick={() => handleClick()}>QUIERO RESERVAR AGORA!</button>
+      <div className="carFleet">
+          <div className="s1-card">
+            <Car car={car}/>
+            <div className="s1-con-table">
+              <div className="s1-con-table-title">
+                <img src="" alt=""/>
+                <button onClick={() => handleClick()}>QUIERO RESERVAR AGORA!</button>
+              </div>
+              <Rates car={car} rates={rates.carsRatesPrice.Avis}/> 
+            </div>
           </div>
-          <Rates/>
-        </div>
       </div>
-    </div>
+   
   )
 }
 

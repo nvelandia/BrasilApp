@@ -18,12 +18,13 @@ function FilterFleet (props) {
                 <div className="s1-filter-divide">
                     <h4>FILTRAR RESULTADOS POR</h4>
                 </div>
+                <div className="s1-filter-hr"></div>
                 <div className="s1-filter-checkbox">
-                    <div className="s1-filter-checkbox">
+                    <div>
                         <input type="checkbox"/>
                         <h5>Avis</h5>
                     </div>
-                    <div className="s1-filter-checkbox">
+                    <div>
                         <input type="checkbox"/>
                         <h5>Budget</h5>
                     </div>

@@ -18,25 +18,16 @@
     background-color: $white;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
-    padding: 30px;
+    
 
     button {
         @include button;
         padding: 4px 30px;
     }
-    table thead {
-        background-color: $textinput;
-        font-size: 0.8em;
-        img {
-            width: 20px;
-            margin-right: 5px;
-        }
-    }
-    tbody {
-        span {
-            color: $secondary;
-            font-weight: 700;
-        }
+    .s1-con-table-title {
+        padding: 30px;
+        justify-content: space-between;
+        display: flex;
     }
 
 }
@@ -72,4 +63,58 @@
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCu-gz9CiIsl1AgpAbjqSrxLvnr5Ww0ozpmg&usqp=CAU");
     @include center;
 
+}
+
+.s1-rates {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px;
+    border-bottom: 1px solid $textinput;
+    div {
+        display: flex;
+        p   {
+            margin: 0px;
+        }
+    }
+    span {
+        color: $secondary;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+   
+}
+
+.s1-rates-title {
+    display: flex;
+    justify-content: space-between;
+    background-color: $iconinput;
+    padding: 10px 30px;
+    align-items: center;
+    font-weight: 700;
+    
+    div {
+        display: flex;
+    }
+
+    img {
+        margin: -2px 18px 0px 0px;
+        width: 20px;
+    }
+    p {
+        margin: 0px;
+        font-size: .85em;
+    }
+
+    .s1-rates-pay {
+        width: 51%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+.s1-rates-inclusoes {
+    color: $secondary;
+    text-align: end;
+    font-weight: 700;
 }

@@ -13,7 +13,7 @@ export const findLocation = (body, language) =>
 
 
 export const findFleet = (body) => 
-  axios.post(`${host}find_fleet`, headers, body);
+  axios.post(`${host}find_fleet`, body);
 
 
 export const findCar = (body, language) => 

@@ -3,13 +3,30 @@
 
 
 .s2 {
-        display: flex;
-        justify-content: center;
+        @include center;
+        width: 100%;
 
 }
+
+.s2-container {
+    display: flex;
+    width: 65%;
+    @media screen and (max-width: $small) {
+       flex-direction: column;
+    }
+}
+
+.s2-con-left {
+    width: 65%;
+}
+
+.s2-con-right {
+    width: 35%;
+}
+
 .s2-prices {
     background-color: $white;
-    width: 400px;
+    min-width: 380px;
     margin: 23px 0px 23px 23px;
     border-radius: 7px;   
 }
@@ -58,6 +75,9 @@
         }
         h6 {
             font-weight: 700;
+        }
+        p {
+            margin-bottom: 16px;
         }
 }
 

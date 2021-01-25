@@ -12,7 +12,10 @@ function Step1 (props) {
 
   const { place_pickup, place_dropoff, info_user, lang } = props;
   const language = lang === 'ru' ? 'pt' : lang;
-  const [flee, setFleet] = useState('');
+  const [fleet, setFleet] = useState('');
+  
+  const [avis, setAvis] = useState('');
+  const [budget, setBudget] = useState('');
 
   const body = { 
       pickup_location: place_pickup.id,
@@ -32,39 +35,54 @@ function Step1 (props) {
   }
 
    useEffect(() => {
-    console.log('bodyyyyy', body, language)
-      findFleet(body, language)
+      findFleet(body)
         .then(response =>  response.data)
-        .then(res => console.log('respuesta api', res))
         .then(res => setFleet(res))
+        .then(x => convertir())
         .catch(error => console.log( error))
   }, [])
+  console.log(fleet)
 
-  // const companies = [];
+  
 
-  //   function divideCompany(fleet){
-  //       for( const compañia in res){
-  //         const tarifas = res[compañia]
-  //         companies.push(tarifas);
-  //       }
-  //       console.log(companies)
-  //       searchCars(companies[0])
-  //   }
+  const companies = [];
 
-  //   function searchCars (company) {
+    // function divideCompany(fleet){
+    //     for( const compañia in res){
+    //       const tarifas = res[compañia]
+    //       companies.push(tarifas);
+    //     }
+    //     console.log(companies)
+    //     searchCars(companies[0])
+    // }
 
-  //   const unionCors = [];
+    // function searchCars (company) {
 
-  //     for (const property in company) {
-  //       const unionTarifas = company[property] 
-  //       //console.log('flag 2', property, unionTarifas);
-  //         for(const cars in unionTarifas ){
-  //           console.log('flag 3', cars, unionTarifas[cars])
+    // const unionCors = [];
+
+    //   for (const property in company) {
+    //     const unionTarifas = company[property] 
+    //     //console.log('flag 2', property, unionTarifas);
+    //       for(const cars in unionTarifas ){
+    //         console.log('flag 3', cars, unionTarifas[cars])
              
-  //         }
-  //     }
-  //   }    
-  console.log(`${place_pickup.pickup_date} ${place_pickup.pickup_time} hs.`)
+    //       }
+    //   }
+    // }    
+    async function convertir  () {
+      const xbudget = Object.values(fleet.cars.Budget) ;
+      const xavis = Object.values(fleet.cars.Avis) ;
+ 
+      await  set(xbudget, xavis)
+    }
+
+    function set (x, a) {
+      setAvis(a);
+     setBudget(x);
+    }
+
+    console.log('avis:', avis, 'budget:', budget )
+
 
     return (
     
@@ -85,7 +103,10 @@ function Step1 (props) {
         </div>
       </div>
       <FilterFleet/>
-      <CardFleet/>
+      { avis && avis.map((x) => (
+        <CardFleet rates={fleet} car={x}/>
+
+      ))}
     </div>
   )
 }

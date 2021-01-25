@@ -27,20 +27,20 @@ function EquiOptional (props) {
                 Sed sit voluptatum aperiam iusto dolor pariatur!</p>
         </div>
         <div>
-            <div className="s2-equipOptional-select">
+            {/* <div className="s2-equipOptional-select">
                 <img src="/img/plus-circle.svg" alt=""/>
-                <NamePrice text={'Assento elevatorio'} price={'0.00'}/>
-                <div>
-                    <FormGroup>
+                <p>Assento elevatorio:</p>
+                <p><span>USD 0.00</span></p>
+                <FormGroup>
                         <Input type="select" name="select" id="exampleSelect">
                         <option>0</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
                         </Input>
-                    </FormGroup>
-                    <p>Quantidade: <span>0</span></p>
-                </div>
+                </FormGroup>
+                <p>Quantidade: <span>0</span></p>
+            
             </div>
             <div className="s2-equipOptional-select">
                 <img src="/img/plus-circle.svg" alt=""/>
@@ -71,12 +71,12 @@ function EquiOptional (props) {
                     </Input>
                 </FormGroup>
                 <p>Quantidade: <span>0</span></p>
-            </div>
-            <div className="s2-equipOptional-slect">
-                <div>
+            </div> */}
+            <div className="s2-equipOptional-select">
+                
                     <img src="/img/plus-circle.svg" alt=""/>
                     <NamePrice text={'GPS - Navegador por satelite'} price={'0.00'}/>
-                </div>
+                
                 <Input type="checkbox" />
             </div>
             <div>
