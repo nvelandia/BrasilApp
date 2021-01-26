@@ -1,0 +1,102 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+ 
+.s2-ClientType {
+    background-color: $white;
+    width: 100%;
+    margin-bottom: 22px;
+    padding: 30px;
+    border-radius: $radius;
+    
+    h6 {
+        font-weight: 700;
+    }
+
+    select {
+        width: 48%;
+        margin-top: 22px;
+    }
+    .form-group {
+        margin-bottom: 0%;
+    }
+}
+
+.s2-ClientType-agency {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 48%;
+    }
+    input {
+        margin-top: 22px;
+    }
+    button {
+        @include button;
+        margin-top: 22px;
+        width: 100%;
+    }
+}
+
+.s2-ClientType-client {
+    background-color: $white;
+    width: 100%;
+    margin-bottom: 22px;
+    padding: 30px;
+    border-radius: $radius;
+    h6 {
+        font-weight: 700;
+    }
+    button {
+        @include button;
+        // margin-top: 22px;
+        // width: 100%;
+    }
+
+}
+
+.s2-ClientType-div1 {
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 48%;
+    }
+    input {
+        margin-top: 22px;
+    }
+}
+
+.s2-ClientType-aplicar{
+    display: flex;
+    width: 100% !important;
+    button {
+        margin-top: 22px;
+        width: 40%;
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+        height: 37.5px;
+    }
+    input {
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+    }
+}
+
+.s2-ClientType-voo {
+    margin-top: 30px;
+
+}
+
+.s2-ClientType-div2 {
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 48%;
+    }
+    input {
+        margin-top: 22px;
+    }
+    select {
+        margin-top: 22px;
+    }
+}

@@ -4,6 +4,7 @@ import  translate from '../../translates/translations';
 import { connect } from 'react-redux';
 import { setLanguage } from 'react-redux-multilang';
 import CarSelected from '../components/atoms/carSelected';
+import ClientType from '../components/atoms/clientType';
 import Price from '../components/organism/price';
 import CardMap from '../components/molecules/cardMap';
 import EquiOptional from '../components/molecules/equiOptional';
@@ -53,6 +54,7 @@ function Step2 (props) {
                     
                     </div>
                     <EquiOptional/>
+                    <ClientType/>
                 </div>
                 <div className="s2-con-right">
                     <Price/>
